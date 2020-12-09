@@ -7,9 +7,9 @@ public class MeshCreator1 : MonoBehaviour
 {
     public int length = 0;
     public int width = 0;
-    public float lengthOffset = 0;
-    public float widthOffset = 0;
-    public float Offset = 0;
+    public float a = 0;
+    public float b = 0;
+
 
     private Mesh mesh;
     private Vector3[] vertices;
@@ -48,11 +48,9 @@ public class MeshCreator1 : MonoBehaviour
                     triangles[num_tri + 5] = num_vert - width;
                     num_tri += 6;
                 }
-                float y = Mathf.PerlinNoise(x * lengthOffset, z * widthOffset) * Offset;
-                y += Mathf.PerlinNoise(x * 0.2f, z * 0.2f) * 0.001f * y * y;
-                y += Mathf.PerlinNoise(x * 0.1f, z * 0.1f) * 0.8f;
-                y += Mathf.PerlinNoise(x * 0.5f, z * 0.5f) * 0.1f;
-                y += y * y * 0.04f;
+                float newx = x - length / 2;
+                float newz = z - width / 2;
+                float y = a * newx * newx + b * newz * newz;
                 vertices[num_vert] = new Vector3(x, y, z);
                 num_vert++;
             }
