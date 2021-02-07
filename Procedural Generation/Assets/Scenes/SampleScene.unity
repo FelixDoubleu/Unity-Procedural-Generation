@@ -159,7 +159,7 @@ MonoBehaviour:
   elevationScale: 10
   material: {fileID: 2100000, guid: 4cadc260c81bf4acf925cea1f001be47, type: 2}
   erosion: {fileID: 7200000, guid: 3d22ccb65deb342569720aedadddf958, type: 3}
-  numErosionIterations: 50000
+  numErosionIterations: 100000
   erosionBrushRadius: 3
   maxLifetime: 30
   sedimentCapacityFactor: 3
@@ -171,7 +171,7 @@ MonoBehaviour:
   startSpeed: 1
   startWater: 1
   inertia: 0.3
-  showProgress: 1
+  showProgress: 0
 --- !u!23 &503719023
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -245,13 +245,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3bdb312b06224dfa8900e1aeba92248, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seed: 0
+  seed: 3836
   randomizeSeed: 0
   numOctaves: 10
   persistence: 0.4
   lacunarity: 2
   initialScale: 2
-  useComputeShader: 1
+  useComputeShader: 0
   heightMapComputeShader: {fileID: 7200000, guid: 89aa1db8ee3484dffae04d05d3a5b5e7,
     type: 3}
 --- !u!1 &705507993

@@ -80,11 +80,22 @@ public class HeightMapGenerator : MonoBehaviour {
         float minValue = float.MaxValue;
         float maxValue = float.MinValue;
 
+        int cx = mapSize / 2;
+        int cy = mapSize / 2;
+
         for (int y = 0; y < mapSize; y++) {
             for (int x = 0; x < mapSize; x++) {
-                float noiseValue = 0;
+                float noiseValue = 5;
                 float scale = initialScale;
                 float weight = 1;
+                int xdist = Mathf.Abs(cx - x);
+                int ydist = Mathf.Abs(cy - y);
+                float dist = Mathf.Sqrt(Mathf.Pow(xdist, 2) + Mathf.Pow(ydist, 2));
+                if (dist <= 50)
+                {
+                    noiseValue += (1 / 2000f * Mathf.Pow(dist, 2)) - 1.25f;
+                }
+                if (dist >= 50 && dist <= 60){noiseValue += (-1 / 200f * Mathf.Pow(dist - 55, 2)) + 0.125f;}
                 for (int i = 0; i < numOctaves; i++) {
                     Vector2 p = offsets[i] + new Vector2 (x / (float) mapSize, y / (float) mapSize) * scale;
                     noiseValue += Mathf.PerlinNoise (p.x, p.y) * weight;
