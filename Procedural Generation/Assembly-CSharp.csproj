@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\CamRotate.cs" />
     <Compile Include="Assets\Scripts\Erosion.cs" />
     <Compile Include="Assets\Scripts\HeightMapGenerator.cs" />
+    <Compile Include="Assets\Scripts\ObjExport.cs" />
     <Compile Include="Assets\Scripts\OldMeshGenerator.cs" />
     <Compile Include="Assets\Scripts\TerrainGenerator.cs" />
     <None Include="Assets\Scripts\ComputeShaders\Erosion.compute" />

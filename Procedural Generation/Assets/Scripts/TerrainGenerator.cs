@@ -224,6 +224,7 @@ public class TerrainGenerator : MonoBehaviour {
         meshRenderer.sharedMaterial = material;
 
         material.SetFloat ("_MaxHeight", elevationScale);
+        //meshFilter Export
     }
 
     void AssignMeshComponents () {
