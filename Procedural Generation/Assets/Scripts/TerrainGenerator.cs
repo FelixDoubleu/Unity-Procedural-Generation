@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using Exporter;
 
 public class TerrainGenerator : MonoBehaviour {
 
@@ -29,6 +30,7 @@ public class TerrainGenerator : MonoBehaviour {
     [Range (0, 1)]
     public float inertia = 0.3f;
     public bool showProgress = false;
+    public string exportPath = "";
 
     // Internal
     float[] map;
@@ -248,5 +250,14 @@ public class TerrainGenerator : MonoBehaviour {
 
         meshRenderer = meshHolder.GetComponent<MeshRenderer> ();
         meshFilter = meshHolder.GetComponent<MeshFilter> ();
+    }
+
+
+    public void Export()
+    {
+        if (meshFilter != null)
+        {
+            Exporter.ObjExporter.MeshToFile(meshFilter, exportPath);
+        }
     }
 }
