@@ -172,6 +172,7 @@ MonoBehaviour:
   startWater: 1
   inertia: 0.3
   showProgress: 0
+  exportPath: F:\Krater.obj
 --- !u!23 &503719023
 MeshRenderer:
   m_ObjectHideFlags: 0

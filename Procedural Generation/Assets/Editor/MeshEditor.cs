@@ -22,6 +22,11 @@ public class MeshEditor : Editor {
         if (GUILayout.Button ("Erode (" + numIterationsString + " iterations)")) {
             terrainGenerator.StartErosion(numIterationsString);
         }
+
+        if (GUILayout.Button("Export"))
+        {
+            terrainGenerator.Export();
+        }
     }
 
     void OnEnable () {
