@@ -8,11 +8,11 @@ Prozedurale Generierung ist ein Verfahren, das unter anderem in Videospielen ver
 
 ## Was beinhaltet das Projekt?
 Das Projekt beinhaltet zwei Ordner:
- - Im Ordner "Documents" sind alle erarbeiteten Materialien vorhanden. Dateien mit der Endung ".obj" können mit einem CAD-Programm wie blender geöffnet werden, Programme wie Microsoft Word oder Powerpoint sind ebenfalls in der Lage diese anzuzeigen.
+ - Im Ordner "Documents" sind alle erarbeiteten Materialien vorhanden. Dateien mit der Endung ".obj" können mit einem CAD-Programm wie "blender" geöffnet werden, Programme wie Microsoft Word oder Powerpoint sind ebenfalls in der Lage diese anzuzeigen.
  - Der Ordner "Procedural Generation" beinhaltet eine Projektdatei, die mit Hilfe der Unity Entwicklungsumgebung geöffnet werden kann.
 
 ## Scripts und Code-Schnipsel.
-Das Projekt verwendet Scripts und Code-Schnipsel aus anderen Quellen:
+Das Projekt verwendet Scripts und Code-Schnipsel aus verschiedenen Quellen:
 - [Obj Exporter Script](http://wiki.unity3d.com/index.php?title=ObjExporter)
 - [Scripts für Hydraulische Erosion](https://github.com/SebLague/Hydraulic-Erosion)
 - [Unity API Dokumentation](https://docs.unity3d.com/ScriptReference/)
