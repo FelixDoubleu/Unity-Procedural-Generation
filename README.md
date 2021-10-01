@@ -19,4 +19,4 @@ Das Projekt verwendet Scripts und Code-Schnipsel aus verschiedenen Quellen:
 - [C# Dokumentation](https://docs.microsoft.com/de-de/dotnet/csharp/)
 
 ## Lizenz
-Das Projekt verwendet eine MIT open-source Lizenz, weitere Informationen finden sich [hier](LICENCE).
+Das Projekt verwendet eine MIT open-source Lizenz, weitere Informationen finden sich [hier](https://github.com/FelixDoubleu/Unity-Procedural-Generation/blob/main/LICENSE).
