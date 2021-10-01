@@ -17,3 +17,6 @@ Das Projekt verwendet Scripts und Code-Schnipsel aus verschiedenen Quellen:
 - [Scripts für Hydraulische Erosion](https://github.com/SebLague/Hydraulic-Erosion)
 - [Unity API Dokumentation](https://docs.unity3d.com/ScriptReference/)
 - [C# Dokumentation](https://docs.microsoft.com/de-de/dotnet/csharp/)
+
+## Lizenz
+Das Projekt verwendet eine MIT open-source Lizenz, weitere Informationen finden sich [hier](LICENCE).
